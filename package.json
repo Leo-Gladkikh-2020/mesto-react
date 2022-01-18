@@ -1,5 +1,5 @@
 {
-  "name": "mesto-react",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,13 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "homepage": "https://github.com/Leo-Gladkikh-2020/mesto#readme",
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
