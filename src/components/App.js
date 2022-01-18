@@ -52,7 +52,7 @@ function App() {
                 name="popup-edit"
                 title="Редактировать профиль"
                 btnText="Сохранить"
-                isOpen={isEditProfilePopupOpen ? "popup_opened" : ''}
+                isOpen={isEditProfilePopupOpen}
                 onClose={closeAllPopups}
             >
                 <input className="popup__input popup__input_text_name" type="text" name="name" id="name" placeholder="Имя"
@@ -67,7 +67,7 @@ function App() {
                 name="popup-avatar"
                 title="Обновить аватар"
                 btnText="Сохранить"
-                isOpen={isEditAvatarPopupOpen ? "popup_opened" : ''}
+                isOpen={isEditAvatarPopupOpen}
                 onClose={closeAllPopups}
             >
                 <input className="popup__input popup__input_text_link" type="url" name="avatar" id="avatar"
@@ -79,7 +79,7 @@ function App() {
                 name="popup-add"
                 title="Новое место"
                 btnText="Создать"
-                isOpen={isAddPlacePopupOpen ? "popup_opened" : ''}
+                isOpen={isAddPlacePopupOpen}
                 onClose={closeAllPopups}
             >
                 <input className="popup__input popup__input_text_title" type="text" name="title" id="title" placeholder="Название"
