@@ -104,28 +104,6 @@ function App() {
             .finally(() => { setIsLoading(false) })
     }
 
-    React.useEffect(() => {
-
-        function handleEscClose(event) {
-            if (event.key === 'Escape') {
-                closeAllPopups();
-            }
-        }
-        function handleOverlayClose(event) {
-            if (event.target.classList.contains('popup_opened')) {
-                closeAllPopups();
-            }
-        }
-
-        document.addEventListener('click', handleOverlayClose);
-        document.addEventListener('keydown', handleEscClose);
-
-        return () => {
-            document.removeEventListener('click', handleOverlayClose);
-            document.removeEventListener('keydown', handleEscClose);
-        }
-    }, [])
-
     return (
         <CurrentUserContext.Provider value={currentUser}>
             <CardsContext.Provider value={cards}>
