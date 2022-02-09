@@ -10,13 +10,8 @@ function AddPlacePopup(props) {
         props.onAddPlace({ title: title, link: link });
     }
 
-    function handleChangeTitle(event) {
-        setTitle(event.target.value);
-    }
-
-    function handleChangeLink(event) {
-        setLink(event.target.value);
-    }
+    function handleChangeTitle(event) { setTitle(event.target.value) }
+    function handleChangeLink(event) { setLink(event.target.value) }
 
     React.useEffect(() => {
         if (props.isOpen) {
